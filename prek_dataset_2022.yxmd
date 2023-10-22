@@ -1,0 +1,1474 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||&lt;List of Sheet Names&gt;</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2022_PK_Enrollment_Data_District.xlsx
+Query=&lt;List of Sheet Names&gt;</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sheet Names" size="31" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||&lt;List of Sheet Names&gt;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`Class Size &amp; Stu-Tchr Ratio$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2022_PK_Enrollment_Data_District.xlsx
+Query=`Class Size &amp; Stu-Tchr Ratio...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DIST_CODE" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`Class Size &amp; Stu-Tchr Ratio$`" type="V_String" />
+            <Field name="DIST_NAME" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`Class Size &amp; Stu-Tchr Ratio$`" type="V_String" />
+            <Field name="SCHL_YEAR" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`Class Size &amp; Stu-Tchr Ratio$`" type="Double" />
+            <Field name="SCHL_YEAR_DESC" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`Class Size &amp; Stu-Tchr Ratio$`" type="V_String" />
+            <Field name="AGE_GROUP" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`Class Size &amp; Stu-Tchr Ratio$`" type="V_String" />
+            <Field name="MEDIAN_CLASS_SIZE" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`Class Size &amp; Stu-Tchr Ratio$`" type="Double" />
+            <Field name="STU:TCHR_RATIO" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`Class Size &amp; Stu-Tchr Ratio$`" type="V_String" />
+            <Field name="WEIGHTED_AVG_STU:TCHR+AIDE_RATIO" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`Class Size &amp; Stu-Tchr Ratio$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SCHL_YEAR" selected="False" type="V_String" size="19" />
+            <SelectField field="SCHL_YEAR_DESC" selected="False" />
+            <SelectField field="AGE_GROUP" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Class Size Data 2022</AnnotationText>
+          <DefaultAnnotationText>Class Size Data 2022</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Curricula$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2022_PK_Enrollment_Data_District.xlsx
+Query=`PK Curricula$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DIST_CODE" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Curricula$`" type="V_String" />
+            <Field name="DIST_NAME" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Curricula$`" type="V_String" />
+            <Field name="SCHL_YEAR" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Curricula$`" type="Double" />
+            <Field name="SCHL_YEAR_DESC" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Curricula$`" type="V_String" />
+            <Field name="AGE_GROUP" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Curricula$`" type="V_String" />
+            <Field name="DATA_CATEGORY_GROUP" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Curricula$`" type="V_String" />
+            <Field name="PREK_CURRICULA" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Curricula$`" type="V_String" />
+            <Field name="COUNT_TYPE" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Curricula$`" type="V_String" />
+            <Field name="COUNT" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Curricula$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="174" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>COUNT_TYPE</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-10-17 12:20:22</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>School</Operand>
+              <StartDate>2023-10-17 12:20:22</StartDate>
+              <EndDate>2023-10-17 12:20:22</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([COUNT_TYPE],"School")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="366" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="DIST_NAME" order="Ascending" />
+            <Field field="COUNT" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DIST_NAME - Ascending
+COUNT - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
+        <Position x="462" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Method>UniqueValue</Method>
+          <UniqueValue>
+            <UniqueFields>
+              <Field field="PREK_CURRICULA" />
+            </UniqueFields>
+            <DontSort value="True" />
+          </UniqueValue>
+          <GroupFields orderChanged="False">
+            <Field name="DIST_CODE" />
+            <Field name="DIST_NAME" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="558" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Tile_Num</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-10-17 12:21:54</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2023-10-17 12:21:54</StartDate>
+              <EndDate>2023-10-17 12:21:54</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Tile_Num] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="654" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PREK_CURRICULA" selected="True" rename="PREK_CURRICULA_MostSchool" />
+            <SelectField field="COUNT_TYPE" selected="False" />
+            <SelectField field="COUNT" selected="True" rename="PREK_Curricula_MostSchools_Count" />
+            <SelectField field="Tile_Num" selected="False" />
+            <SelectField field="Tile_SequenceNum" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Most Used Prek Curriculum</AnnotationText>
+          <DefaultAnnotationText>Most Used Prek Curriculum</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="270" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SCHL_YEAR" selected="False" />
+            <SelectField field="SCHL_YEAR_DESC" selected="False" />
+            <SelectField field="AGE_GROUP" selected="False" />
+            <SelectField field="DATA_CATEGORY_GROUP" selected="False" />
+            <SelectField field="COUNT" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="666" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="DIST_CODE" action="GroupBy" rename="DIST_CODE" />
+            <SummarizeField field="DIST_NAME" action="GroupBy" rename="DIST_NAME" />
+            <SummarizeField field="PREK_CURRICULA" action="Concat" rename="PREK_CURRICULA_Available">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>All Available in District</AnnotationText>
+          <DefaultAnnotationText>All Available in District</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="834" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_DIST_CODE" selected="False" rename="Right_DIST_CODE" input="Right_" />
+                <SelectField field="Right_DIST_NAME" selected="False" rename="Right_DIST_NAME" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="546" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PREK_CURRICULA" action="GroupBy" rename="PREK_CURRICULA" />
+            <SummarizeField field="COUNT" action="Sum" rename="Sum_COUNT" />
+            <SummarizeField field="Sum_COUNT_students" action="Sum" rename="Sum_Sum_COUNT_students" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="642" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Sum_COUNT" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Most popular Curricula in TX 2021-2022 school year</AnnotationText>
+          <DefaultAnnotationText>Sum_COUNT - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="750" y="654" width="132" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>put tableau chart screenshot image on webpage as part of context</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="196" b="225" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="330" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="DIST_CODE" action="GroupBy" rename="DIST_CODE" />
+            <SummarizeField field="DIST_NAME" action="GroupBy" rename="DIST_NAME" />
+            <SummarizeField field="PREK_CURRICULA" action="GroupBy" rename="PREK_CURRICULA" />
+            <SummarizeField field="COUNT" action="Sum" rename="Sum_COUNT_students" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="246" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="COUNT" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="438" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+            <Field field="PREK_CURRICULA" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+            <Field field="PREK_CURRICULA" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_DIST_CODE" selected="False" rename="Right_DIST_CODE" input="Right_" />
+                <SelectField field="Right_DIST_NAME" selected="False" rename="Right_DIST_NAME" input="Right_" />
+                <SelectField field="Right_PREK_CURRICULA" selected="False" rename="Right_PREK_CURRICULA" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="174" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>NotContains</Operator>
+            <Field>COUNT</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-10-17 12:52:17</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2023-10-17 12:52:17</StartDate>
+              <EndDate>2023-10-17 12:52:17</EndDate>
+              <Operand>*</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!Contains([COUNT],"*")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`School Providing PK$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2022_PK_Enrollment_Data_District.xlsx
+Query=`School Providing PK$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DIST_CODE" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`School Providing PK$`" type="V_String" />
+            <Field name="DIST_NAME" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`School Providing PK$`" type="V_String" />
+            <Field name="SCHL_YEAR" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`School Providing PK$`" type="Double" />
+            <Field name="SCHL_YEAR_DESC" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`School Providing PK$`" type="V_String" />
+            <Field name="DATA_CATEGORY" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`School Providing PK$`" type="V_String" />
+            <Field name="STUDENT_INSTRUCTION_TYPE" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`School Providing PK$`" type="V_String" />
+            <Field name="SCHOOL_COUNT" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`School Providing PK$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="SCHL_YEAR" selected="False" />
+            <SelectField field="SCHL_YEAR_DESC" selected="False" />
+            <SelectField field="DATA_CATEGORY" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="306" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </GroupFields>
+          <HeaderField field="STUDENT_INSTRUCTION_TYPE" />
+          <DataField field="SCHOOL_COUNT" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DIST_CODE" size="255" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="DIST_NAME" size="255" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Full___Half_Day" source="CrossTab:Header:STUDENT_INSTRUCTION_TYPE:Full &amp; Half-Day:Sum:" type="Double" />
+            <Field name="Full_Day_Only" source="CrossTab:Header:STUDENT_INSTRUCTION_TYPE:Full-Day Only:Sum:" type="Double" />
+            <Field name="Half_Day_Only" source="CrossTab:Header:STUDENT_INSTRUCTION_TYPE:Half-Day Only:Sum:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="DIST_CODE" order="Asc" />
+            <Field field="DIST_NAME" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings>
+        <Position x="498" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Cnt_PreK_FullANDHalfDay","Cnt_PreK_FullDay_Only","Cnt_PreK_HalfDay_Only"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">True</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">True</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="402" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Full___Half_Day" selected="True" rename="Cnt_PreK_FullANDHalfDay" />
+            <SelectField field="Full_Day_Only" selected="True" rename="Cnt_PreK_FullDay_Only" />
+            <SelectField field="Half_Day_Only" selected="True" rename="Cnt_PreK_HalfDay_Only" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="594" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Cnt_PreK_FullANDHalfDay]+[Cnt_PreK_FullDay_Only]" field="Cnt_PreK_FullDayAvailable" size="8" type="Double" />
+            <FormulaField expression="[Cnt_PreK_FullANDHalfDay]+[Cnt_PreK_HalfDay_Only]" field="Cnt_PreK_HalfDayAvailable" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Cnt_PreK_FullDayAvailable = [Cnt_PreK_FullANDHalfDay]+[Cnt_PreK_FullDay_Only]
+Cn...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="1062" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Enrollment &amp; Membership$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>2022_PK_Enrollment_Data_District.xlsx
+Query=`PK Enrollment &amp; Membership$...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DIST_CODE" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Enrollment &amp; Membership$`" type="V_String" />
+            <Field name="DIST_NAME" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Enrollment &amp; Membership$`" type="V_String" />
+            <Field name="SCHL_YEAR" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Enrollment &amp; Membership$`" type="Double" />
+            <Field name="SCHL_YEAR_DESC" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Enrollment &amp; Membership$`" type="V_String" />
+            <Field name="AGE_GROUP" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Enrollment &amp; Membership$`" type="V_String" />
+            <Field name="RECORD_TYPE" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Enrollment &amp; Membership$`" type="V_String" />
+            <Field name="DATA_CATEGORY_GROUP" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Enrollment &amp; Membership$`" type="V_String" />
+            <Field name="DATA_CATEGORY" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Enrollment &amp; Membership$`" type="V_String" />
+            <Field name="STUDENT_INSTRUCTION_TYPE" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Enrollment &amp; Membership$`" type="V_String" />
+            <Field name="STUDENT_COUNT" size="255" source="File: C:\Users\Catherine.Leigh\OneDrive - Southern Glazer's Wine &amp; Spirits\Documents\WomenWhoCode\WWC_Hackathon_2023\data\2022_PK_Enrollment_Data_District.xlsx|||`PK Enrollment &amp; Membership$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="270" y="1062" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>AGE_GROUP</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-10-17 16:46:13</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2023-10-17 16:46:13</StartDate>
+              <EndDate>2023-10-17 16:46:13</EndDate>
+              <Operand>Ages 3 &amp; 4</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[AGE_GROUP] = "Ages 3 &amp; 4"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="402" y="1050" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>DATA_CATEGORY_GROUP</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-10-17 16:46:33</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>ADA</Operand>
+              <StartDate>2023-10-17 16:46:33</StartDate>
+              <EndDate>2023-10-17 16:46:33</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[DATA_CATEGORY_GROUP] = "ADA"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="522" y="1038" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>DATA_CATEGORY</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-10-17 16:46:43</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2023-10-17 16:46:43</StartDate>
+              <EndDate>2023-10-17 16:46:43</EndDate>
+              <Operand>ADA</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([DATA_CATEGORY],"ADA")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="618" y="1026" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="DIST_NAME" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DIST_NAME - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="774" y="1026" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </GroupFields>
+          <HeaderField field="DATA_CATEGORY" />
+          <DataField field="STUDENT_COUNT" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DIST_CODE" size="255" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="DIST_NAME" size="255" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="ADA_Eligible" size="2048" source="CrossTab:Header:DATA_CATEGORY:ADA Eligible:Concat:" type="V_String" />
+            <Field name="ADA_Ineligible" size="2048" source="CrossTab:Header:DATA_CATEGORY:ADA Ineligible:Concat:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="DIST_CODE" order="Asc" />
+            <Field field="DIST_NAME" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="594" y="1182" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="DIST_NAME" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DIST_NAME - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="510" y="1194" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>DATA_CATEGORY</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-10-17 16:55:25</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2023-10-17 16:55:25</StartDate>
+              <EndDate>2023-10-17 16:55:25</EndDate>
+              <Operand>Total Students</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([DATA_CATEGORY],"Total Students")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="402" y="1206" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>DATA_CATEGORY_GROUP</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2023-10-17 16:55:12</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Total</Operand>
+              <StartDate>2023-10-17 16:55:12</StartDate>
+              <EndDate>2023-10-17 16:55:12</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[DATA_CATEGORY_GROUP] = "Total"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1122" y="1098" width="216" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Per District for 21-22 school year for 3&amp;4 yo PK, enrollment count by ADA eligibility (NULLS mean the count wasn't available in the original data, due to anonymity or availability)</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="930" y="1098" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_DIST_CODE" selected="False" rename="Right_DIST_CODE" input="Right_" />
+                <SelectField field="Right_DIST_NAME" selected="False" rename="Right_DIST_NAME" input="Right_" />
+                <SelectField field="Right_SCHL_YEAR" selected="False" input="Right_" />
+                <SelectField field="Right_SCHL_YEAR_DESC" selected="False" input="Right_" />
+                <SelectField field="Right_AGE_GROUP" selected="False" input="Right_" />
+                <SelectField field="Right_RECORD_TYPE" selected="False" input="Right_" />
+                <SelectField field="Right_DATA_CATEGORY_GROUP" selected="False" input="Right_" />
+                <SelectField field="Right_DATA_CATEGORY" selected="False" input="Right_" />
+                <SelectField field="Right_STUDENT_INSTRUCTION_TYPE" selected="False" input="Right_" />
+                <SelectField field="Right_STUDENT_COUNT" selected="True" rename="PK_Total_Enrollment_21_22" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1206" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_DIST_CODE" selected="False" rename="Right_DIST_CODE" input="Right_" />
+                <SelectField field="Right_DIST_NAME" selected="False" rename="Right_DIST_NAME" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="462" y="906" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1398" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_DIST_CODE" selected="False" rename="Right_DIST_CODE" input="Right_" />
+                <SelectField field="Right_DIST_NAME" selected="False" rename="Right_DIST_NAME" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1530" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1302" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1626" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DIST_CODE" />
+            <Field field="DIST_NAME" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_DIST_CODE" selected="False" rename="Right_DIST_CODE" input="Right_" />
+                <SelectField field="Right_DIST_NAME" selected="False" rename="Right_DIST_NAME" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="750" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="PREK_CURRICULA_Available" selected="True" size="2000" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1770" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1890" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">.\cleaned_prek_dataset.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cleaned_prek_dataset.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="43" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Join" />
+      <Destination ToolID="43" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="False" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output26" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="23" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="45" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="45" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="True" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="True" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="True" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="True" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="42" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="42" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="True" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Join" />
+      <Destination ToolID="48" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="48" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="43" Connection="Join" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="43" Connection="Left" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="43" Connection="Right" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="45" Connection="Join" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="45" Connection="Left" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="45" Connection="Right" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="48" Connection="Join" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="48" Connection="Left" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="48" Connection="Right" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>prek_dataset_2022</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="e47b3194-3dac-4cd9-b102-68569083ce9f" />
+      <Telemetry>
+        <PreviousWorkflowId value="2aaff122-8c45-44dd-b5a8-0390594151cc" />
+        <OriginWorkflowId value="2aaff122-8c45-44dd-b5a8-0390594151cc" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
